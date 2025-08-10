@@ -1,43 +1,76 @@
-# Cross-Modal Emotion Recognition (FER2013 & RAVDESS)
+# ✈️ Airline Passenger Satisfaction Prediction
 
-This project implements deep learning models (CNN, LSTM, and CNN-LSTM hybrid) to perform **unimodal emotion recognition** using two benchmark datasets:  
-- **FER2013** (Facial Expression Recognition): 35,000+ grayscale facial images in 7 emotion categories.  
-- **RAVDESS** (Ryerson Audio-Visual Database of Emotional Speech and Song): Speech audio clips labeled with 8 emotions.  
-
-The project also includes a **Gradio-based user interface** for real-time emotion detection from user-provided images or audio files.
-
----
-
-## Features
-- Trained and evaluated CNN, LSTM, and CNN-LSTM architectures for both datasets.
-- Cross-modality performance comparison revealing modality-specific strengths.
-- Real-time prediction through a simple, interactive web interface.
-- Detailed analysis via classification reports and confusion matrices.
+## 📖 Overview
+This project analyzes and predicts airline passenger satisfaction based on flight experience, travel details, and service quality metrics.  
+It includes:
+- Data preprocessing & feature engineering
+- Supervised learning models for classification
+- Unsupervised clustering for segmentation
+- Model evaluation & comparison
+- Interactive Gradio web app for predictions
 
 ---
 
-## Datasets
-- **FER2013:** [Kaggle Link](https://www.kaggle.com/datasets/msambare/fer2013)  
-- **RAVDESS:** [Official Link](https://zenodo.org/record/1188976)
+## 📂 Project Structure
+ML_Project/
+│── data/                 # Raw and processed datasets
+│── notebooks/            # Jupyter notebooks for EDA, training, evaluation
+│── models/               # Saved model and transformer .pkl files
+│── app/                  # Gradio frontend code
+│── figures/              # Dataset overview & workflow diagram
+│── README.md             # Project documentation
 
 ---
 
-## How to Run the App
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/<your-username>/Emotion-Recognition-FER2013-RAVDESS.git
-   cd Emotion-Recognition-FER2013-RAVDESS
+## 🧠 Models Used
+### **Supervised Models**
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+- XGBoost
+- MLP (Neural Network)
+- Extra Trees
 
-2.	Navigate to the app directory:
-    cd app
+### **Unsupervised Models**
+- KMeans
+- DBSCAN
+- Gaussian Mixture Model (GMM)
+- Spectral Clustering
 
-3.	Run the Gradio UI:
-    python app.py
+---
 
-4.	Open your browser and go to:
-    http://127.0.0.1:7860
+## 📊 Evaluation Metrics
+- **Classification:** Accuracy, Precision, Recall, F1-score, Confusion Matrix
+- **Clustering:** Silhouette Score, Davies–Bouldin Index, Inertia
 
-The interface will allow you to:
-	•	Select a trained model.
-	•	Upload a face image or audio sample.
-	•	View the predicted emotion and confidence score.
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/airline-satisfaction-prediction.git
+cd airline-satisfaction-prediction/app
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the Gradio app
+python app.py
+
+The app will be available at:
+http://127.0.0.1:7860
+
+---
+
+The dataset is sourced from:
+Kaggle - Airline Passenger Satisfaction
+
+---
+
+📌 Key Insights
+	•	Class (Business/Eco) and Online boarding are top predictors of satisfaction.
+	•	Inflight services (WiFi, entertainment, comfort) strongly influence satisfaction.
+	•	Economy class and personal travel correlate with higher dissatisfaction.
+	•	Gender, age, and gate location have negligible impact.
