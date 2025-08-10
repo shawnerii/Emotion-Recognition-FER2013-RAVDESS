@@ -52,6 +52,7 @@ ML_Project/
 ```bash
 git clone https://github.com/<your-username>/airline-satisfaction-prediction.git
 cd airline-satisfaction-prediction/app
+```
 
 2️⃣ Install dependencies
 pip install -r requirements.txt
