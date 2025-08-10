@@ -13,12 +13,12 @@ It includes:
 
 ## 📂 Project Structure
 ML_Project/
-│── data/                 # Raw and processed datasets
-│── notebooks/            # Jupyter notebooks for EDA, training, evaluation
-│── models/               # Saved model and transformer .pkl files
-│── app/                  # Gradio frontend code
-│── figures/              # Dataset overview & workflow diagram
-│── README.md             # Project documentation
+- │── data/                 # Raw and processed datasets
+- │── notebooks/            # Jupyter notebooks for EDA, training, evaluation
+- │── models/               # Saved model and transformer .pkl files
+- │── app/                  # Gradio frontend code
+- │── figures/              # Dataset overview & workflow diagram
+- │── README.md             # Project documentation
 
 ---
 
